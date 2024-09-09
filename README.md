@@ -19,9 +19,22 @@ Untuk Mengakases Fitur dashboard, CRUD Data Sparepart , Melihat Data Penjualan ,
 
 
 #DOKUMENTASI WEBSITE
+#Pengunjung
 1. Beranda Pengunjung
 ![alt text](https://github.com/riskiai/TestWebPTPrawathiya/blob/main/public/assets/img/berandapengunjung.png?raw=true)
+2. Produk Sparepart Dan Bisa Melakukan Pemesanan
+![alt text](https://github.com/riskiai/TestWebPTPrawathiya/blob/main/public/assets/img/formpengunjung.png?raw=true)
 
+#Admin
+Untuk Admin Harus Login Terlebih Dahulu Untuk Mengakases Fitur dashboard, CRUD Data Sparepart , Melihat Data Penjualan
+1. Login
+![alt text](https://github.com/riskiai/TestWebPTPrawathiya/blob/main/public/assets/img/login.png?raw=true)
+2. Dashboard Admin
+![alt text](https://github.com/riskiai/TestWebPTPrawathiya/blob/main/public/assets/img/dashboardpengunjung.png?raw=true)
+3. CRUD Data Barang Sparepart Motor
+![alt text](https://github.com/riskiai/TestWebPTPrawathiya/blob/main/public/assets/img/crudsparepart.png?raw=true)
+4. Data Penjualan Barang Sparepart Motor
+![alt text](https://github.com/riskiai/TestWebPTPrawathiya/blob/main/public/assets/img/datapenjualansparepart.png?raw=true)
 
 
 
