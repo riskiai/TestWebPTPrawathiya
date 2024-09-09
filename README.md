@@ -14,8 +14,9 @@ Laravel Version : 10 PHP Version : ^8.1  MySQL Version : 15.1
 #CREDENTIALS / ROLE 
 1. Pengunjung
 
-Untuk Mengakases Fitur dashboard, CRUD Data Sparepart , Melihat Data Penjualan , Harus Login Terlebih Dahulu Sebagai Role Admin
-3. Admin => email    = admin@example.com
+   Untuk Mengakases Fitur dashboard, CRUD Data Sparepart , Melihat Data Penjualan
+   Harus Login Terlebih Dahulu Sebagai Role Admin
+2. Admin => email    = admin@example.com
             password = password123
 
 
