@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Authentication\LoginController;
 use App\Http\Controllers\Admin\MasterBarangController;
+use App\Http\Controllers\Guest\PenjualanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,9 +20,15 @@ Route::get('/', function () {
     return redirect('/admin/sparepart');
 });
 
+/* Authentication */
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/loginprosess', [LoginController::class, 'login'])->name('loginprosess');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+/* Pengunjung */
+Route::get('/beranda', [PenjualanController::class, 'beranda'])->name('beranda');
+Route::get('/produk', [PenjualanController::class, 'produk'])->name('produk');
+Route::post('/produk-pesan', [PenjualanController::class, 'produkpesan'])->name('produk-pesan');
 
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
     /* Data Dashboard Barang Sparepart */

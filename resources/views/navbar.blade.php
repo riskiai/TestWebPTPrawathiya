@@ -78,7 +78,11 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                 <ul class="navbar-nav">
+                   
                     @if(Auth::check() && Auth::user()->role_id == 1) <!-- Untuk Admin -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="{{ route('dashboard') }}">AUTOMOTIF</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="{{ route('dashboard') }}">DASHBOARD</a>
                         </li>
@@ -90,13 +94,16 @@
                         </li>
                     @else <!-- Untuk Guest -->
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="">BERANDA</a>
+                            <a class="nav-link" aria-current="page" href="{{ route('beranda') }}">AUTOMOTIF</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('sparepart') }}">PRODUK KAMI</a>
+                            <a class="nav-link" aria-current="page" href="{{ route('beranda') }}">BERANDA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}" style="margin-left:1900%;">LOGIN</a>
+                            <a class="nav-link" href="{{ route('produk') }}">PRODUK KAMI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}" style="margin-left:1750%;">LOGIN</a>
                         </li>
                     @endif
                 </ul>
