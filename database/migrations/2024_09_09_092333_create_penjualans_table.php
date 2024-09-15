@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('penjualans', function (Blueprint $table) {
             $table->id(); 
-            $table->date('tgl_faktur'); 
+            // Menggunakan timestamp untuk menyimpan tanggal dan waktu
+            $table->timestamp('tgl_faktur')->useCurrent(); 
             $table->string('no_faktur', 50); 
             $table->string('nama_konsumen'); 
             $table->unsignedBigInteger('kode_barang'); 
@@ -22,7 +23,7 @@ return new class extends Migration
             $table->decimal('harga_total', 15, 2); 
 
             $table->foreign('kode_barang')->references('id')->on('master_barangs')->onDelete('cascade'); 
-            $table->timestamps(); 
+            $table->timestamps(); // Menggunakan timestamps bawaan Laravel (created_at, updated_at)
         });
     }
 
